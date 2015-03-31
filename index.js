@@ -1,0 +1,1 @@
+console.log("scipm.output_to_editor is not a classic nodejs/iojs module")

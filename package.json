@@ -1,0 +1,66 @@
+{
+    "main": "index.js",
+    "name": "scipm.output_to_editor",
+    "version": "0.1.0",
+    "description": "copy output to editor",
+    "license": "GPL-3.0",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/aminassian/scipm.output_to_editor.git"
+    },
+    "bugs": {
+        "type": "git",
+        "url": "git://github.com/aminassian/scipm.output_to_editor/issues"
+    },
+    "keywords": [
+        "scipm-package"
+    ],
+    "dependencies": {
+    },
+    "scipmchild": {
+        "version": "1",
+        "scipmDependencies": {},
+        "luaRequire": [],
+        "SciTEStartup": {
+            "_use": "dofile",
+            "raw": null,
+            "filePath": null,
+            "dofile": ["scite", "main.lua" ],
+            "luaReportExtend": "scipm.core.printInfoPackage(\"scipm.output_to_editor\");",
+            "infoLuaFunctions": [
+                {"name": "scipm.output_to_editor.start()"}
+            ],
+            "infoFiles": [
+                {"path": ["README.md"]},
+                {"path": ["package.json"]},
+                {"path": ["scite", "main.lua"]}
+            ],
+            "infoProps": [
+            ]
+        },
+        "actions": {
+            "output_to_editor": {
+                "title": "← Output to editor",
+                "description": "copy output to editor",
+                "pattern": [
+                    "*"
+                ],
+                "addToolsMenu": {
+                    "allow": true,
+                    "addContextMenu": true,
+                    "command": {
+                        "shortcuts": null,
+                        "subsystem": "luadirector",
+                        "cmd": "dostring scipm.output_to_editor.start()",
+                        "isFilter": null,
+                        "saveBefore": "2",
+                        "input": null,
+                        "replaceSelection": null,
+                        "quiet": null,
+                        "mode": null
+                    }
+                }
+            }
+        }
+    }
+}
