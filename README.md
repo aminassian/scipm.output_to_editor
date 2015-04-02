@@ -21,7 +21,7 @@ scipm.output_to_editor.config.filePath=$(SciteUserHome)/output.txt
 
 ## tool menu
 
-``Output to editor`` (tool and context menu)
+``← Output to editor`` (tool and context menu)
 
 ## lua function
 

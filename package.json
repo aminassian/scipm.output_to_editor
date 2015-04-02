@@ -1,7 +1,7 @@
 {
     "main": "index.js",
     "name": "scipm.output_to_editor",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "copy output to editor",
     "license": "GPL-3.0",
     "repository": {
